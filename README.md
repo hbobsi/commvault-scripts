@@ -43,26 +43,20 @@ Antes de começar, certifique-se de ter:
    ```
 3. Execute um script (exemplo):
    ```bash
-   python check_jobs.py --timeframe "24h"
+   python get-client-configs.py
    ```
 
-> **Dica:** Confira cada script na pasta `scripts/` para detalhes específicos!
+> **Dica:** Confira cada script nos sub-diretórios para detalhes específicos!
 
 ---
 
 ## 📋 Exemplos Práticos
 
-### Verificar Jobs
+### Verificar Configurações
 ```bash
-python check_jobs.py --timeframe "24h"
+python get-client-configs.py
 ```
-*Retorna o status dos jobs das últimas 24 horas.*
-
-### Gerar Relatório
-```bash
-python client_report.py --output relatorio.csv
-```
-*Cria um relatório em CSV com dados dos clientes.*
+*Retorna configurações dos clientes do Commvault e gera um relatório em CSV.*
 
 ---
 
@@ -70,11 +64,10 @@ python client_report.py --output relatorio.csv
 
 ```
 commvault-scripts/
-├── scripts/          # Onde a mágica acontece! ✨
-│   ├── check_jobs.py    # Verifica status de jobs
-│   └── client_report.py # Gera relatórios
+├── scripts/                     # Onde a mágica acontece! ✨
+│   └── get-client-configs.py    # Consulta configurações dos clients
 ├── docs/            # Documentação extra (em breve!)
-├── examples/        # Exemplos de uso
+├── examples/        # Exemplos de uso (em breve!)
 └── README.md        # Este arquivo bonitão 😍
 ```
 
@@ -92,7 +85,7 @@ Quer ajudar a melhorar? Adoraria! Siga esses passos:
 
 ## 📝 Licença
 
-Este projeto está sob a licença **MIT**. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+Este projeto está sob a licença **GLP-3.0**. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
 ---
 
@@ -101,5 +94,6 @@ Este projeto está sob a licença **MIT**. Veja o arquivo [LICENSE](LICENSE) par
 Dúvidas? Sugestões? Abra uma **issue** ou me encontre no GitHub como [hbobsi](https://github.com/hbobsi). Vamos conversar! 😄
 
 <div align="center">
-  <i>Feito por hbobsi</i>
+  <i>Feito por Heitor Oliveira</i>
+  ![Commvault Expert](https://images.credly.com/images/748e9f47-7ce8-4d7b-b6be-81bb142b2896/linkedin_thumb_image.png)
 </div>

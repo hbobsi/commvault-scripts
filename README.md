@@ -1,16 +1,28 @@
-# Commvault Scripts
+<div align="center">
+  
+# Commvault Scripts 🚀
 
-Bem-vindo ao repositório `commvault-scripts`! Este projeto contém uma coleção de scripts para automação e gerenciamento de tarefas relacionadas ao Commvault, uma plataforma de proteção e gerenciamento de dados.
+**Uma coleção de scripts incríveis para automação no Commvault!**
 
-## Descrição
+![GitHub repo size](https://img.shields.io/github/repo-size/hbobsi/commvault-scripts?style=for-the-badge)
+![GitHub last commit](https://img.shields.io/github/last-commit/hbobsi/commvault-scripts?style=for-the-badge)
+![License](https://img.shields.io/github/license/hbobsi/commvault-scripts?style=for-the-badge)
 
-Este repositório foi criado para armazenar scripts úteis que interagem com o Commvault. Os scripts podem incluir automações para tarefas como backup, verificação de jobs, geração de relatórios ou integração com APIs do Commvault. O objetivo é facilitar o trabalho diário de administradores e engenheiros que utilizam essa ferramenta.
+</div>
 
-## Pré-requisitos
+---
 
-Antes de usar os scripts, certifique-se de ter o seguinte instalado/configurado:
-- **Commvault**: Versão compatível instalada e configurada (ex.: v11 ou superior).
-- **Python**: Algumas versões (ex.: 3.8+), caso os scripts sejam baseados em Python.
-- **Dependências**: Instale as bibliotecas necessárias listadas em `requirements.txt` (se aplicável):
+## 📜 Sobre o Projeto
+
+Bem-vindo ao `commvault-scripts`! Aqui você encontra scripts práticos e eficientes para automatizar tarefas no **Commvault**, como backups, relatórios e monitoramento de jobs. Criado para simplificar a vida de administradores e entusiastas da ferramenta. Vamos tornar o gerenciamento de dados mais fácil! 😎
+
+---
+
+## 🛠️ Pré-requisitos
+
+Antes de começar, certifique-se de ter:
+- **Commvault** instalado (v11 ou superior) ✅
+- **Python 3.8+** 🐍
+- Dependências listadas (se houver):
   ```bash
   pip install -r requirements.txt

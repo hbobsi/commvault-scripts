@@ -94,11 +94,9 @@ Este projeto está sob a licença **GLP-3.0**. Veja o arquivo [LICENSE](LICENSE)
 Dúvidas? Sugestões? Abra uma **issue** ou me encontre no GitHub como [hbobsi](https://github.com/hbobsi). Vamos conversar! 😄
 
 <div align="center">
-  <i>Feito por Heitor Oliveira</i>
+  
+  <i>Feito por [Heitor Oliveira](https://www.credly.com/users/heitor-oliveira.e2a59c29)</i>
   
   ![Commvault Expert](https://images.credly.com/images/748e9f47-7ce8-4d7b-b6be-81bb142b2896/linkedin_thumb_image.png)
-  ![Commvault Engineer](https://images.credly.com/images/9f30416a-c8e6-4157-81d8-000452c78566/linkedin_thumb_image.png)
-  ![Commvault Professional](https://images.credly.com/images/ffe2a5d5-a091-458d-992f-d771aa67cecf/image.png)
-  
 
 </div>

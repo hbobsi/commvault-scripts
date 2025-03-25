@@ -65,10 +65,16 @@ python get-client-configs.py
 ```
 commvault-scripts/
 ├── scripts/                     # Onde a mágica acontece! ✨
-│   └── get-client-configs.py    # Consulta configurações dos clients
-├── docs/            # Documentação extra (em breve!)
-├── examples/        # Exemplos de uso (em breve!)
-└── README.md        # Este arquivo bonitão 😍
+│   ├── get-client-configs.py    # Consulta configurações dos clients
+│   └── monitoramento-zabbix     # Scripts para monitorar o Commvault através do Zabbix
+│       ├── get-commcell-info.py # Coleta informações gerais do CommCell (nome, licença, versão, saúde) e envia para o Zabbix.
+│       ├── get-failed-jobs.py   # Coleta informações sobre jobs com falha no Commvault e envia para o Zabbix para monitoramento e alertas.
+│       ├── get-jobs.py          # Coleta informações sobre o status dos Jobs (concluídos, falha, etc) e envia para o Zabbix.
+│       ├── get-library.py       # Coleta informações sobre as Libraries (descobre e monitora métricas) e envia para o Zabbix.
+│       ├── get-ma.py            # Coleta informações sobre os MediaAgents (descobre e monitora status) e envia para o Zabbix.
+├── docs/                        # Documentação extra (em breve!)⌛
+├── examples/                    # Exemplos de uso (em breve!) ⌛
+└── README.md                    # Este arquivo! 😍
 ```
 
 ---

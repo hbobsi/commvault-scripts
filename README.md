@@ -1,6 +1,6 @@
 # Commvault Scripts
 
-![Commvault Logo](https://www.commvault.com/wp-content/uploads/2021/02/commvault-og-image.jpg)
+![Commvault Logo]([https://www.commvault.com/wp-content/uploads/2021/02/commvault-og-image.jpg](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.cybersecitalia.events%2Fen%2Fpartner%2Fcommvault-2%2F&psig=AOvVaw3rdZ8bgIaO3OP8sFj9LaVo&ust=1743009966858000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCLjJ8KHgpYwDFQAAAAAdAAAAABAE))
 
 ## Descrição
 

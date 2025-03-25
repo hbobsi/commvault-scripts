@@ -95,5 +95,6 @@ Dúvidas? Sugestões? Abra uma **issue** ou me encontre no GitHub como [hbobsi](
 
 <div align="center">
   <i>Feito por Heitor Oliveira</i>
+  
   ![Commvault Expert](https://images.credly.com/images/748e9f47-7ce8-4d7b-b6be-81bb142b2896/linkedin_thumb_image.png)
 </div>

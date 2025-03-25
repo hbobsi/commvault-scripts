@@ -26,11 +26,11 @@ This Python script retrieves client information from a Commvault server using it
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/hbobsi/commvault-getConfigClients.git
+   git clone https://github.com/hbobsi/commvault-scripts.git
    ```
 2. Navigate to the project directory:
    ```bash
-   cd commvault-getConfigClients
+   cd commvault-scripts/get-client-configs
    ```
 3. Install dependencies:
    ```bash
@@ -87,7 +87,7 @@ Este script em Python recupera informações de clientes de um servidor Commvaul
    ```
 2. Navegue até o diretório do projeto:
    ```bash
-   cd commvault-getConfigClients
+   cd commvault-scripts/get-client-configs
    ```
 3. Instale as dependências:
    ```bash

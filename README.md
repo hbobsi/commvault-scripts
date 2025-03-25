@@ -1,31 +1,16 @@
 # Commvault Scripts
 
-![Commvault Logo]([https://www.commvault.com/wp-content/uploads/2021/02/commvault-og-image.jpg](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.cybersecitalia.events%2Fen%2Fpartner%2Fcommvault-2%2F&psig=AOvVaw3rdZ8bgIaO3OP8sFj9LaVo&ust=1743009966858000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCLjJ8KHgpYwDFQAAAAAdAAAAABAE))
+Bem-vindo ao repositório `commvault-scripts`! Este projeto contém uma coleção de scripts para automação e gerenciamento de tarefas relacionadas ao Commvault, uma plataforma de proteção e gerenciamento de dados.
 
 ## Descrição
 
-Este repositório contém scripts desenvolvidos para automatizar tarefas no Commvault, visando facilitar e otimizar processos relacionados à administração e operação desta plataforma de backup e recuperação de dados.
-
-## Índice
-
-- [Pré-requisitos](#pré-requisitos)
-- [Instalação](#instalação)
-- [Uso](#uso)
-- [Contribuições](#contribuições)
-- [Licença](#licença)
-- [Contato](#contato)
+Este repositório foi criado para armazenar scripts úteis que interagem com o Commvault. Os scripts podem incluir automações para tarefas como backup, verificação de jobs, geração de relatórios ou integração com APIs do Commvault. O objetivo é facilitar o trabalho diário de administradores e engenheiros que utilizam essa ferramenta.
 
 ## Pré-requisitos
 
-Antes de utilizar os scripts, certifique-se de que seu ambiente atende aos seguintes requisitos:
-
-- [Commvault](https://www.commvault.com/) instalado e configurado.
-- [Python 3.x](https://www.python.org/downloads/) instalado no sistema.
-- Bibliotecas adicionais listadas no arquivo `requirements.txt`.
-
-## Instalação
-
-1. Clone este repositório para sua máquina local:
-
-   ```bash
-   git clone https://github.com/hbobsi/commvault-scripts.git
+Antes de usar os scripts, certifique-se de ter o seguinte instalado/configurado:
+- **Commvault**: Versão compatível instalada e configurada (ex.: v11 ou superior).
+- **Python**: Algumas versões (ex.: 3.8+), caso os scripts sejam baseados em Python.
+- **Dependências**: Instale as bibliotecas necessárias listadas em `requirements.txt` (se aplicável):
+  ```bash
+  pip install -r requirements.txt

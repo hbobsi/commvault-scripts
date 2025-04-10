@@ -27,8 +27,9 @@ headers = {
 
 def get_jobs():
     """Busca lista de Jobs na API do Commvault.
-    Esta função envia uma solicitação GET para a URL especificada em #Configurações para listar os jobs dos últimos 3600 segundos. Ela lida com quaisquer exceções na solicitação e retorna uma lista vazia em caso de erro.
-    
+    Esta função envia uma solicitação GET para a URL especificada em #Configurações
+    para listar os jobs dos últimos 3600 segundos. Ela lida com quaisquer exceções 
+    na solicitação e retorna uma lista vazia em caso de erro.
     Returns:
         list: Uma lista de Jobs. Se ocorrer um erro, uma lista vazia será retornada.
     Raises:
@@ -64,34 +65,41 @@ def parse_jobs(jobs):
     queued_jobs = 0
     waiting_jobs = 0
     pending_jobs = 0
+    delayed_jobs= 0
 
     for job in jobs:
         status = job['jobSummary'].get('status')
+        elapsedtime = int(job['jobSummary'].get('jobElapsedTime'))
         if status == 'Completed': 
             completed_jobs += 1
-        elif status == 'Failed':
+        if status == 'Failed':
             failed_jobs += 1
-        elif status == 'Queued':
+        if status == 'Queued':
             queued_jobs += 1    
-        elif status == 'Waiting':
+        if status == 'Waiting':
             waiting_jobs += 1
-        elif status == 'Running':
+        if status == 'Running':
             running_jobs += 1
-        elif status == 'Pending':
+        if status == 'Pending':
             pending_jobs += 1
-
+        if status != 'Completed' and elapsedtime > 172800:
+            delayed_jobs += 1
     return {
         "commvault.failed_jobs": failed_jobs,
         "commvault.running_jobs": running_jobs,
         "commvault.completed_jobs": completed_jobs,
         "commvault.queued_jobs": queued_jobs,
         "commvault.waiting_jobs": waiting_jobs,
-        "commvault.pending_jobs": pending_jobs
+        "commvault.pending_jobs": pending_jobs,
+        "commvault.delayed_jobs": delayed_jobs
     }
 
 def send_to_zabbix(metrics):
     """Enviar métricas coletadas para o Zabbix.
-    Esta função pega um dicionário de métricas e envia cada par de chave-valor  para o servidor Zabbix usando o executável zabbix_sender. Ele constroi um comando para cada métrica e o executa no shell. Se o comando falhar, uma mensagem de erro é impressa.
+    Esta função pega um dicionário de métricas e envia cada par de chave-valor 
+    para o servidor Zabbix usando o executável zabbix_sender. Ele constrói um 
+    comando para cada métrica e o executa no shell. Se o comando falhar, uma 
+    mensagem de erro é impressa.
     Args:
         metrics (dict): Um dicionário onde as chaves são nomes de métricas e os 
                         valores são os valores de métricas correspondentes a serem 

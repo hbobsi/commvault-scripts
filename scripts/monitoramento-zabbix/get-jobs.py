@@ -58,6 +58,7 @@ def parse_jobs(jobs):
             - "commvault.queued_jobs": Número de jobs que estão em fila.
             - "commvault.waiting_jobs": Número de jobs que estão aguardando por recurso.
             - "commvault.pending_jobs": Número de jobs que estão pendentes.
+            - "commvault.delayed_jobs": Número de jobs que estão com tempo de execução elevado.
     """
     failed_jobs = 0
     running_jobs = 0
